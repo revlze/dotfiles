@@ -1,0 +1,120 @@
+{
+  "custom/filler": {
+    "format": "<span size=\"16pt\"></span>"
+  },
+  "custom/launcher": {
+    "format": "<span size=\"16pt\">󰣇</span>"
+  },
+
+  "cpu": {
+    "interval": 10,
+    "format": "<big></big> {usage}%",
+    "format-alt": "<big></big> {usage}%",
+    "max-length": 10,
+    "on-click": "kitty bpytop"
+  },
+  "memory": {
+    "interval": 30,
+    "format": "<big></big> {used:0.1f}G",
+    "format-alt": "<big></big> {}%",
+    "max-length": 10,
+    "on-click-right": "kitty bpytop"
+  },
+
+  "disk": {
+    "path": "/home",
+    "interval": 1,
+    "format": "<big></big> {}%",
+    "on-click": "filelight /",
+    "on-click-right": "filelight /home/"
+  },
+
+
+  "niri/workspaces": {
+    "current-only": false,
+    "format": "{icon}[{index}]",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "urgent": "",
+      "active": "",
+      "default": ""
+    }
+  },
+
+  "wireplumber": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "helvum",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+
+  "battery": {
+    "states": {
+    "good": 90,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-full": "{icon}  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""]
+    },
+
+  "network": {
+    "format-wifi": "<big>󰒢</big> {essid}",
+    "format-alt": "<big>󰒢</big> {bandwidthTotalBits}",
+    "format-ethernet": "<big>󰈀</big> wired",
+    "format-disconnected": "",
+    "tooltip-format": "{essid} {signalStrength}%",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click-right": "nm-connection-editor"
+  },
+
+  "niri/language": {
+    "format": "{}",
+    "on-click": "kb_switcher switch",
+    "format-en": "US",
+    "format-ru": "RU"
+  },
+
+  "clock": {
+    "format": "<b>{:L%H:%M | %A | %d/%m/%y}</b>",
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode"          : "year",
+      "mode-mon-col"  : 3,
+      "weeks-pos"     : "right",
+      "on-scroll"     : 1,
+      "format": {
+        "months":     "<span color='#ffead3'><b>{}</b></span>",
+        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+  }, 
+   "actions":  {
+    "on-click-right": "mode",
+    "on-click-forward": "tz_up",
+    "on-click-backward": "tz_down",
+    "on-scroll-up": "shift_up",
+    "on-scroll-down": "shift_down"
+  }
+}

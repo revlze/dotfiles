@@ -1,0 +1,6 @@
+set -gx INTELFPGA_ROOT /opt/intelFPGA/25.1
+set -gx QUARTUS_ROOTDIR $INTELFPGA_ROOT/quartus
+set -gx QSYS_ROOTDIR $QUARTUS_ROOTDIR/sopc_builder
+
+set -gx PATH $PATH $QUARTUS_ROOTDIR/bin $QSYS_ROOTDIR/bin
+

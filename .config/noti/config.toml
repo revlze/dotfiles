@@ -1,0 +1,58 @@
+[general]
+font = "JetBrainsMono Nerd Font"
+anchor = "top right"
+offset = [10, 10]
+width = 300
+height = 120
+gap = 5
+sorting = { by = "urgency", ordering = "desc" }
+idle_threshold = "4s"
+
+[display]
+markup = true
+padding = 10
+#margin = 10
+theme = "pastel"
+
+
+[display.timeout]
+default = 6000
+critical = 0
+
+[display.border]
+size = 4
+radius = 10
+
+[display.image]
+max_size = 64
+margin = {right = 25}
+
+[display.text]
+style = "bold"
+ellipsize_at = "end"
+justification = "center"
+font_size = 15
+
+#[display.title]
+#wrap = false
+#font_size = 20
+
+[display.body]
+style = "regular"
+justification = "left"
+ellipsize_at = "middle"
+font_size = 18
+
+[[theme]]
+name = "pastel"
+
+[theme.normal]
+background = "#1e1e2e"
+foreground = "#99AEB3"
+border = "#000"
+
+[theme.critical]
+background = "#EBA0AC"
+foreground = "#1E1E2E"
+border = "#000"
+
