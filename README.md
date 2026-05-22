@@ -1,4 +1,7 @@
 # Dotfiles
 
-В текущей момент не использую `config/hypr/*`, поэтому он может быть устаревшим.
-т.к. перешел с hyprland на niri.
+Репозиторий разбит на ветки:
+- [`master`](../../tree/master) — readme и некоторые инструкции 
+- [`archlinux`](../../tree/archlinux)— dots для archlinux+niri
+    > ⚠️ Больше не поддерживается — переехал на macOS
+- [`macos`](../../tree/macos) — dots для macOS
