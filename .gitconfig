@@ -1,0 +1,12 @@
+[user]
+	signingKey = /Users/platon/.ssh/id_ed25519.pub
+	name = Platon U.
+	email = revlze@yahoo.com
+[commit]
+	gpgSign = true
+[gpg]
+	format = ssh
+[core]
+	editor = nvim
+[advice]
+	defaultBranchName = false
